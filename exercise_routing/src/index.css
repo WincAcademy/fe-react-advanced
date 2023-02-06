@@ -15,6 +15,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+#app {
+  width: 100%;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -27,9 +31,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -67,4 +68,61 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.root {
+  padding: 10px;
+  width: 90%;
+}
+
+nav {
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: start;
+}
+
+nav ul li {
+  padding: 0 20px;
+}
+
+
+.post-list > .post {
+  margin: 0 0 5px 0;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 1000px) {
+  .post-list > .post {
+    max-width: 50%;
+  }
+}
+
+.post-detail > .comments {
+  padding-left: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > label {
+  display: flex;
+  padding: 10px 0 10px;
+}
+
+form > button {
+  position: relative;
+  left: 100px;
+  width: 100px;
+}
+
+form span {
+  width: 100px;
 }

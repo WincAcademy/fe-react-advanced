@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { NewPost, loader as newPostLoader } from "./NewPost";
+import { NewPost } from "./NewPost";
 import { Post, loader as postLoader } from "./Post";
 import { PostList, loader as postListLoader } from "./PostList";
 import { Root } from "./Root";
@@ -31,7 +31,6 @@ const router = createBrowserRouter([
       {
         path: "/post/new",
         element: <NewPost />,
-        loader: newPostLoader,
       },
     ],
   },

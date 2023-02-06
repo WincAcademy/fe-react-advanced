@@ -13,16 +13,19 @@
         {
             "userId": "8e3d3460",
             "body": "Hello World",
+            "title": "Initial Post",
             "id": "f4c8a31e"
         },
         {
             "userId": "8e3d3460",
             "body": "What is your favorite animal?",
+            "title": "Animals",
             "id": "c7beae11"
         },
         {
             "userId": "a0c63ac7",
             "body": "What are you doing today?",
+            "title": "Daily check in",
             "id": "892a4ba3"
         }
     ],

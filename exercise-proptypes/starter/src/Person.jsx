@@ -1,3 +1,5 @@
+import React from "react";
+
 function Person({ name, age, address, hobbies, pronoun }) {
   const formattedAddress = `${address.houseNumber} ${address.street}, ${address.city}`;
   return (

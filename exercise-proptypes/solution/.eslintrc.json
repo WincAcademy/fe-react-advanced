@@ -11,11 +11,19 @@
 	"overrides": [],
 	"parserOptions": {
 		"ecmaVersion": "latest",
+		"ecmaFeatures": {
+			"jsx": true
+		},
 		"sourceType": "module"
 	},
 	"plugins": ["react"],
 	"rules": {
 		"react/react-in-jsx-scope": 0,
-		"react/prop-types": 1
+		"react/prop-types": "error"
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
 	}
 }

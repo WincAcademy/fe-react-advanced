@@ -1,16 +1,17 @@
 import PropTypes from "prop-types";
+import React from "react";
 
-export const Person = ({ name, age, address, hobbies, pronoun }) => {
+function Person({ name, age, address, hobbies, pronoun }) {
   const formattedAddress = `${address.houseNumber} ${address.street}, ${address.city}`;
   return (
     <div className="person">
       <p>
-        {name} (aged {age}) lives at {formattedAddress}. {pronoun} likes to{" "}
+        {name} (aged {age}) lives at {formattedAddress}. {pronoun} hobbies are{" "}
         {hobbies.join(", ")}. What a person!
       </p>
     </div>
   );
-};
+}
 
 Person.propTypes = {
   name: PropTypes.string.isRequired,
@@ -25,6 +26,8 @@ Person.propTypes = {
 };
 
 Person.defaultProps = {
-  hobbies: [],
-  pronoun: "They",
+  hobbies: ["coding"],
+  pronoun: "Their",
 };
+
+export default Person;

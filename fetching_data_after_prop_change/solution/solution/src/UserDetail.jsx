@@ -9,7 +9,7 @@ export const UserDetail = ({ user }) => {
 
 		const fetchUserPosts = async () => {
 			const response = await fetch(
-				`https://jsonplaceholder.typicode.com/users/${user.id}/posts`,
+				`http://localhost:3000/users/${user.id}/posts`,
 			);
 			const post = await response.json();
 			if (!ignore) {

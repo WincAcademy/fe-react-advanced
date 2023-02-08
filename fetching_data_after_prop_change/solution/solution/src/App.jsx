@@ -8,7 +8,7 @@ const App = () => {
 	useEffect(() => {
 		const fetchUsers = async () => {
 			const response = await fetch(
-				'https://jsonplaceholder.typicode.com/users',
+				'http://localhost:3000/users',
 			);
 			const friends = await response.json();
 			setUsers(friends);

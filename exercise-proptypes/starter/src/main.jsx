@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import Person from "./Person";
 import "./index.css";
 
+// @ts-ignore
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Person
@@ -13,7 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         houseNumber: 1,
         city: "San Francisco",
       }}
-      hobbies={["play piano", "cook", "play basketball"]}
+      hobbies={["playing piano", "cooking", "knitting"]}
       pronoun="He"
     />
   </React.StrictMode>

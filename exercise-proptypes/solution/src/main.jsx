@@ -1,24 +1,29 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { Person } from "./Person";
-import "./index.css";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Person from './Person';
+import './index.css';
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <>
-      <Person
-        address={{
-          street: "Zuckerberg Avenue",
-          houseNumber: 1,
-          city: "San Francisco",
-        }}
-        age={27}
-        hobbies={["play piano", "cook", "play basketball"]}
-        name="Johnny"
-        pronoun="He"
-      />
-      <br />
-      <Person name="Hector" address="Hey" />
-    </>
-  </React.StrictMode>
+// @ts-ignore
+ReactDOM.createRoot(document.getElementById('root')).render(
+	<React.StrictMode>
+		<Person
+			address={{
+				street: 'Zuckerberg Avenue',
+				houseNumber: 1,
+				city: 'San Francisco',
+			}}
+			age={27}
+			hobbies={['playing piano', 'cooking', 'knitting']}
+			name="Johnny"
+			pronoun="His"
+		/>
+		<br />
+		<Person
+			name="Clarissa"
+			age={59}
+			address={{ street: 'Bezos Lane', houseNumber: 6, city: 'Seattle' }}
+			pronoun="Her"
+			hobbies={['sky diving', 'formula 1', 'snowboarding']}
+		/>
+	</React.StrictMode>,
 );

@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useReducer } from "react";
+import { createContext, useContext, useReducer } from "react";
 import { collection } from "./collection";
 
 export const LibraryContext = createContext({});
@@ -22,7 +22,7 @@ const libraryReducer = (state, action) => {
         id: state[state.length - 1].id + 1,
         title: action.title,
         author: action.author,
-        category: action.category,
+        category: action.category.toLowerCase(),
         available: true,
       };
       return state.concat(newBook);

@@ -17,7 +17,7 @@ export const Book = ({ book }) => {
           ⏎ Return
         </button>
       )}
-      <button onClick={() => removeBook(book.id)}>
+      <button type="button" onClick={() => removeBook(book.id)}>
         ❌ Remove from library
       </button>
     </>

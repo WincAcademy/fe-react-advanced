@@ -10,7 +10,7 @@ export const AddBookForm = () => {
     addBook({
       title: event.target.elements.title.value,
       author: event.target.elements.author.value,
-      category: event.target.elements.category.value.toLowerCase(),
+      category: event.target.elements.category.value,
     });
   };
   return (

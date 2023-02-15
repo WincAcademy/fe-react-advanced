@@ -1,8 +1,8 @@
 export const UserDetail = ({ user }) => {
-	return (
-		<>
-			<p>{user.name}</p>
-			<p>{user.email}</p>
-		</>
-	);
+  return (
+    <div className="user-details">
+      <p>{user.name}</p>
+      <p>{user.email}</p>
+    </div>
+  );
 };

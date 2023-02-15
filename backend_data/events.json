@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "id": "8e3d3460",
+      "name": "John Doe"
+    },
+    {
+      "id": "a0c63ac7",
+      "name": "Jane Bennett"
+    }
+  ],
+  "events": [
+    {
+      "userId": "8e3d3460",
+      "description": "Hello World",
+      "title": "Trampoline party",
+      "id": "f4c8a31e"
+    },
+    {
+      "userId": "8e3d3460",
+      "description": "What is your favorite animal?",
+      "title": "Laser game mania",
+      "id": "c7beae11"
+    },
+    {
+      "userId": "a0c63ac7",
+      "description": "What are you doing today?",
+      "title": "Badminton game",
+      "id": "892a4ba3"
+    },
+    {
+      "title": "Yoga",
+      "description": "this is a test",
+      "userId": "a0c63ac7",
+      "id": "EYxSM2z"
+    }
+  ]
+}

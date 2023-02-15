@@ -6,10 +6,7 @@ const App = () => {
   const [person, setPerson] = useState(null);
   const [id, setId] = useState(null);
 
-  useEffect(() => {
-    console.log("rendering...");
-  });
-
+  // empty dependency list, runs only once.
   useEffect(() => {
     console.log("fetching People");
     const fetch = async () => {
@@ -18,17 +15,23 @@ const App = () => {
     fetch();
   }, []);
 
+  // dependency list with one item, runs whenever that value changes.
   useEffect(() => {
     console.log("fetching Person");
-    setPerson(null);
     const fetch = async () => {
       setPerson(await fetchPerson(id));
     };
     fetch();
     return () => {
-      console.log("cleaning up the person useEffect");
+      console.log("cleaning up the person effect");
+      setPerson(null);
     };
   }, [id]);
+
+  // no dependency list, runs each time the component is rendered.
+  useEffect(() => {
+    console.log("rendering...");
+  });
 
   return (
     <div className="App">

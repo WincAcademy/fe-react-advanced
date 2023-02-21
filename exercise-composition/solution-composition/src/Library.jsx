@@ -4,7 +4,7 @@ import { Books } from "./Books";
 import { Book } from "./Book";
 import { Category } from "./Category";
 
-function Library() {
+export default Library = () => {
   const [books, setBooks] = useState(collection.books);
   const borrowBook = (id) => {
     const newBooks = books.map((book) =>
@@ -38,6 +38,4 @@ function Library() {
       </Books>
     </div>
   );
-}
-
-export default Library;
+};

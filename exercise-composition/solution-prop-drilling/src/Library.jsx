@@ -2,7 +2,7 @@ import { useState } from "react";
 import { collection } from "./collection";
 import { Books } from "./Books";
 
-function Library() {
+export default Library = () => {
   const [books, setBooks] = useState(collection.books);
   const borrowBook = (id) => {
     const newBooks = books.map((book) =>
@@ -22,6 +22,4 @@ function Library() {
       <Books books={books} borrowBook={borrowBook} returnBook={returnBook} />
     </div>
   );
-}
-
-export default Library;
+};

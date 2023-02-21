@@ -24,6 +24,7 @@ export default Library = () => {
     });
     setBooks(newBooks);
   };
+
   return (
     <div className="App">
       <h1>Library</h1>

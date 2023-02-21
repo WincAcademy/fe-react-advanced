@@ -26,15 +26,17 @@ export default Library = () => {
     });
     setBooks(newBooks);
   };
+
   const programmingBooks = books.filter(
-    (book) => book.category === "programming"
+    book => book.category === "programming"
   );
+
   return (
     <div className="App">
       <h1>Library</h1>
       <Books amount={books.length}>
         <Category title="Programming" amount={programmingBooks.length}>
-          {programmingBooks.map((book) => (
+          {programmingBooks.map(book => (
             <Book
               key={book.id}
               book={book}

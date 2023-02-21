@@ -4,17 +4,25 @@ import { Books } from "./Books";
 
 export default Library = () => {
   const [books, setBooks] = useState(collection.books);
-  const borrowBook = (id) => {
-    const newBooks = books.map((book) =>
-      book.id === id ? { ...book, available: false } : book
-    );
-    return setBooks(newBooks);
+
+  const borrowBook = id => {
+    const newBooks = books.map(book => {
+      if (book.id === id) {
+        book.available = false;
+      }
+      return book;
+    });
+    setBooks(newBooks);
   };
-  const returnBook = (id) => {
-    const newBooks = books.map((book) =>
-      book.id === id ? { ...book, available: true } : book
-    );
-    return setBooks(newBooks);
+
+  const returnBook = id => {
+    const newBooks = books.map(book => {
+      if (book.id === id) {
+        book.available = true;
+      }
+      return book;
+    });
+    setBooks(newBooks);
   };
   return (
     <div className="App">

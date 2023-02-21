@@ -2,7 +2,7 @@ import { useState } from "react";
 import { collection } from "./collection";
 import { Books } from "./Books";
 
-export default Library = () => {
+export default () => {
   const [books, setBooks] = useState(collection.books);
 
   const borrowBook = id => {

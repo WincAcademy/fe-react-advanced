@@ -4,7 +4,7 @@ import { Books } from "./Books";
 import { Book } from "./Book";
 import { Category } from "./Category";
 
-export default Library = () => {
+export default () => {
   const [books, setBooks] = useState(collection.books);
 
   const borrowBook = id => {

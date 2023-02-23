@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { LibraryContext } from "./Library";
+import { LibraryContext } from "./LibraryContext";
 import { Book } from "./Book";
 
 export const Category = ({ title, category }) => {

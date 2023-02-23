@@ -1,8 +1,7 @@
-import { useState, createContext } from "react";
+import { useState } from "react";
 import { collection } from "./collection";
 import { Books } from "./Books";
-
-export const LibraryContext = createContext({});
+import { LibraryContext } from "./LibraryContext";
 
 function Library() {
   const [books, setBooks] = useState(collection.books);

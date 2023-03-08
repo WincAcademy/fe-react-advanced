@@ -75,8 +75,20 @@
       "location": "Shavasana Yoga School",
       "startTime": "2023-03-09T06:00:00.000Z",
       "endTime": "2023-03-09T07:00:00.000Z"
+    },
+    {
+      "title": "Test",
+      "description": "deeeee",
+      "location": "Hier",
+      "image": "",
+      "startTime": "2023-03-15T15:56",
+      "endTime": "2023-03-23T15:56",
+      "createdBy": 2,
+      "categoryIds": [],
+      "attendedBy": [],
+      "id": 5
     }
-   ],
+  ],
   "categories": [
     {
       "name": "sports",

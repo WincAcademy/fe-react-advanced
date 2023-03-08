@@ -1,38 +1,66 @@
 {
   "users": [
     {
-      "id": "8e3d3460",
-      "name": "John Doe"
+      "id": 1,
+      "name": "John Doe",
+      "image": "https://github.com/WincAcademy/fe-react-advanced/blob/main/images/generated-image-o8f8n.jpg"
     },
     {
-      "id": "a0c63ac7",
-      "name": "Jane Bennett"
+      "id": 2,
+      "name": "Jane Bennett",
+      "image": "https://github.com/WincAcademy/fe-react-advanced/blob/main/images/generated-image-akzmw9.jpg"
     }
   ],
   "events": [
     {
-      "userId": "8e3d3460",
-      "description": "Hello World",
+      "id": 1,
+      "createdBy": 1,
       "title": "Trampoline party",
-      "id": "f4c8a31e"
+      "description": "Bounce around with your friends",
+      "image": "https://i.pinimg.com/736x/3d/2f/af/3d2faf4e3188d34a9fcdc00df59e77b0.jpg",
+      "categoryIds": [2],
+      "startTime": "2023-03-10T15:00:00.000Z",
+      "endTime": "2023-03-10T17:00:00.000Z"
     },
     {
-      "userId": "8e3d3460",
-      "description": "What is your favorite animal?",
-      "title": "Laser game mania",
-      "id": "c7beae11"
+      "id": 2,
+      "createdBy": 1,
+      "title": "Laser Tag mania",
+      "description": "Let's play laser tag!",
+      "image": "https://www.ctvnews.ca/polopoly_fs/1.5118552.1600965663!/httpImage/image.jpg_gen/derivatives/landscape_1020/image.jpg",
+      "categoryIds": [2],
+      "startTime": "2023-03-12T18:00:00.000Z",
+      "endTime": "2023-03-12T20:00:00.000Z"
     },
     {
-      "userId": "a0c63ac7",
-      "description": "What are you doing today?",
+      "id": 3,
+      "createdBy": 2,
       "title": "Badminton game",
-      "id": "892a4ba3"
+      "description": "Hit that shuttle!",
+      "image": "https://s3.eu-west-2.amazonaws.com/ws-activestirling/production/Badminton/_1200x630_crop_center-center_none/Badminton-3.jpg",
+      "categoryIds": [1, 2],
+      "startTime": "2023-03-15T12:00:00.000Z",
+      "endTime": "2023-03-15T13:30:00.000Z"
     },
     {
+      "id": 4,
+      "createdBy": 2,
       "title": "Yoga",
-      "description": "this is a test",
-      "userId": "a0c63ac7",
-      "id": "EYxSM2z"
+      "description": "It's a bit of a stretch.",
+      "image": "https://ymcasouthflorida.org/wp-content/uploads/2019/12/AA2I8910-scaled.jpg",
+      "categoryIds": [1],
+      "startTime": "2023-03-09T06:00:00.000Z",
+      "endTime": "2023-03-09T07:00:00.000Z"
+    }
+  ],
+  "categories": [
+    {
+      "name": "sports",
+      "id": 1
+    },
+    {
+      "name": "games",
+      "id": 2
     }
   ]
 }
